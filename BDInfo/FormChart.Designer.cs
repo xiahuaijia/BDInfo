@@ -48,6 +48,7 @@ namespace BDInfo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChart));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.GraphControl = new ZedGraph.ZedGraphControl();
@@ -73,18 +74,18 @@ namespace BDInfo
             // 
             // GraphControl
             // 
-            this.GraphControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.GraphControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GraphControl.Location = new System.Drawing.Point(12, 12);
             this.GraphControl.Name = "GraphControl";
-            this.GraphControl.ScrollGrace = 0;
-            this.GraphControl.ScrollMaxX = 0;
-            this.GraphControl.ScrollMaxY = 0;
-            this.GraphControl.ScrollMaxY2 = 0;
-            this.GraphControl.ScrollMinX = 0;
-            this.GraphControl.ScrollMinY = 0;
-            this.GraphControl.ScrollMinY2 = 0;
+            this.GraphControl.ScrollGrace = 0D;
+            this.GraphControl.ScrollMaxX = 0D;
+            this.GraphControl.ScrollMaxY = 0D;
+            this.GraphControl.ScrollMaxY2 = 0D;
+            this.GraphControl.ScrollMinX = 0D;
+            this.GraphControl.ScrollMinY = 0D;
+            this.GraphControl.ScrollMinY2 = 0D;
             this.GraphControl.Size = new System.Drawing.Size(785, 370);
             this.GraphControl.TabIndex = 0;
             // 
@@ -95,6 +96,7 @@ namespace BDInfo
             this.ClientSize = new System.Drawing.Size(809, 407);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.GraphControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormChart";
             this.Text = "FormChart";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormChart_FormClosed);

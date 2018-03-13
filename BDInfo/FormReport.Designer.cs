@@ -47,6 +47,7 @@ namespace BDInfo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReport));
             this.buttonCopy = new System.Windows.Forms.Button();
             this.textBoxReport = new System.Windows.Forms.TextBox();
             this.buttonChart = new System.Windows.Forms.Button();
@@ -67,15 +68,15 @@ namespace BDInfo
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(122, 23);
             this.buttonCopy.TabIndex = 6;
-            this.buttonCopy.Text = "Copy to Clipboard";
+            this.buttonCopy.Text = "复制到剪辑版";
             this.buttonCopy.UseVisualStyleBackColor = true;
             this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // textBoxReport
             // 
-            this.textBoxReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxReport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxReport.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxReport.Location = new System.Drawing.Point(12, 51);
             this.textBoxReport.MaxLength = 0;
@@ -93,7 +94,7 @@ namespace BDInfo
             this.buttonChart.Name = "buttonChart";
             this.buttonChart.Size = new System.Drawing.Size(122, 23);
             this.buttonChart.TabIndex = 4;
-            this.buttonChart.Text = "Generate Chart...";
+            this.buttonChart.Text = "生成图表...";
             this.buttonChart.UseVisualStyleBackColor = true;
             this.buttonChart.Click += new System.EventHandler(this.buttonChart_Click);
             // 
@@ -102,9 +103,9 @@ namespace BDInfo
             this.labelChartType.AutoSize = true;
             this.labelChartType.Location = new System.Drawing.Point(266, 8);
             this.labelChartType.Name = "labelChartType";
-            this.labelChartType.Size = new System.Drawing.Size(62, 13);
+            this.labelChartType.Size = new System.Drawing.Size(58, 13);
             this.labelChartType.TabIndex = 47;
-            this.labelChartType.Text = "Chart Type:";
+            this.labelChartType.Text = "图表类型:";
             // 
             // comboBoxChartType
             // 
@@ -127,9 +128,9 @@ namespace BDInfo
             this.labelStream.AutoSize = true;
             this.labelStream.Location = new System.Drawing.Point(117, 8);
             this.labelStream.Name = "labelStream";
-            this.labelStream.Size = new System.Drawing.Size(43, 13);
+            this.labelStream.Size = new System.Drawing.Size(34, 13);
             this.labelStream.TabIndex = 45;
-            this.labelStream.Text = "Stream:";
+            this.labelStream.Text = "串流:";
             // 
             // comboBoxStream
             // 
@@ -145,9 +146,9 @@ namespace BDInfo
             this.labelAngle.AutoSize = true;
             this.labelAngle.Location = new System.Drawing.Point(222, 8);
             this.labelAngle.Name = "labelAngle";
-            this.labelAngle.Size = new System.Drawing.Size(37, 13);
+            this.labelAngle.Size = new System.Drawing.Size(34, 13);
             this.labelAngle.TabIndex = 43;
-            this.labelAngle.Text = "Angle:";
+            this.labelAngle.Text = "角度:";
             // 
             // comboBoxAngle
             // 
@@ -163,9 +164,9 @@ namespace BDInfo
             this.labelPlaylist.AutoSize = true;
             this.labelPlaylist.Location = new System.Drawing.Point(12, 8);
             this.labelPlaylist.Name = "labelPlaylist";
-            this.labelPlaylist.Size = new System.Drawing.Size(42, 13);
+            this.labelPlaylist.Size = new System.Drawing.Size(58, 13);
             this.labelPlaylist.TabIndex = 41;
-            this.labelPlaylist.Text = "Playlist:";
+            this.labelPlaylist.Text = "播放列表:";
             // 
             // comboBoxPlaylist
             // 
@@ -193,8 +194,9 @@ namespace BDInfo
             this.Controls.Add(this.comboBoxPlaylist);
             this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.textBoxReport);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormReport";
-            this.Text = "BDInfo Report";
+            this.Text = "BDInfo 报告";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormReport_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
